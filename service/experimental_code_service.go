@@ -15,10 +15,10 @@ import (
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 )
 
-/*
-*
-Builds client to communicate with Kubernetes
+/**
+DIT IS TEST CODE
 */
+
 func RunClientFunction() {
 	// Setup client
 	var kubeconfig *string
