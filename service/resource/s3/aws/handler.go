@@ -9,7 +9,7 @@ import (
 type AwsHandler struct{}
 
 func (a AwsHandler) Handle(files []*multipart.FileHeader) {
-	// TODO: VALIDATION LOGIC (afhankelijkheden zoals providerconfig of bucketversioning die afhankelijk is van een bucket)
+	// TODO: VALIDATION LOGIC (afhankelijkheden zoals providerconfig of bucketversioning ten opzichte van een bucket)
 
 	// TODO:
 	//  unique names? naam van {klant}-{guid}
