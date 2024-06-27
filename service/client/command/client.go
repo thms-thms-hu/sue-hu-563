@@ -5,7 +5,7 @@ import (
 	"os/exec"
 )
 
-func ApplyResource(content string) {
+func ApplyResource(content []byte) {
 	// prepare command
 	cmd := exec.Command("kubectl", "apply", "-f", "-")
 	stdin, _ := cmd.StdinPipe()
@@ -13,7 +13,7 @@ func ApplyResource(content string) {
 
 	// append file content to command
 	// TODO: checken op command injection
-	stdin.Write([]byte(content))
+	stdin.Write(content)
 	stdin.Close()
 
 	// print eventual errors or responses
